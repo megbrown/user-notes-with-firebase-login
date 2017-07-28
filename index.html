@@ -3,7 +3,7 @@
 <head>
 	<title>User Notes with Authentication</title>
 </head>
-<body ng-app="notesApp">
+<body ng-app="NotesApp">
 
 	<div ng-view></div>
 
@@ -12,11 +12,15 @@
   <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
   <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
-	<script src="app/app.js"></script>
+  <script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<!-- Providers -->
+	<script type="text/javascript" src="app/value/fb-creds.js"></script>
+	<script type="text/javascript" src="/app/factories/userFactory.js"></script>
 	<!-- Controllers -->
 	<script type="text/javascript" src="app/controllers/loginCtrl.js"></script>
-	<script type="text/javascript" src="/app/controllers/registrationCtrl.js"></script>
-	<script type="text/javascript" src="/app/controllers/allNotesCtrl.js"></script>
-	<script type="text/javascript" src="/app/controllers/newNoteCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/registrationCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/allNotesCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/newNoteCtrl.js"></script>
 </body>
 </html>
