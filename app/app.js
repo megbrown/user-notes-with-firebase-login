@@ -1,6 +1,7 @@
 "use strict";
 
-const notesApp = angular.module("NotesApp", ["ngRoute"]);
+let notesApp = angular.module("NotesApp", ["ngRoute"])
+.constant("FirebaseUrl", "https://notes-3f823.firebaseio.com/");
 
 notesApp.config( ($routeProvider) => {
 	$routeProvider
