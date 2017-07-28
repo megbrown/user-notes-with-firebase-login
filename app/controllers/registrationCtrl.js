@@ -16,4 +16,5 @@ notesApp.controller("RegisterCtrl", function($scope, UserFactory) {
 		});
 	};
 
+
 });
