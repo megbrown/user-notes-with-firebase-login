@@ -9,7 +9,7 @@ notesApp.config( ($routeProvider) => {
 		templateUrl: "partials/registration.html",
 		controller: "RegisterCtrl"
 	})
-	.when("/login", {
+	.when("/", {
 		templateUrl: "partials/login.html",
 		controller: "LoginCtrl"
 	})

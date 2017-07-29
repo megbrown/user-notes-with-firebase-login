@@ -1,6 +1,6 @@
 "use strict";
 
-notesApp.controller("RegisterCtrl", function($scope, UserFactory) {
+notesApp.controller("RegisterCtrl", function($scope, $window, UserFactory) {
 
 	$scope.registerAccount = {
 		email: "",
@@ -8,11 +8,9 @@ notesApp.controller("RegisterCtrl", function($scope, UserFactory) {
 	};
 
 	$scope.registerUser = () => {
-		// TODO validate that user doesn't exist
-		console.log("you clicked register");
 		UserFactory.createUser($scope.registerAccount)
 		.then( (userData) => {
-			console.log("New User!", userData);
+			$window.location.href = "#!/notes";
 		});
 	};
 

@@ -10,7 +10,6 @@ notesApp.controller("NewNoteCtrl", function($scope, $window, UserFactory, NewNot
 	$scope.saveNewNote = () => {
 		NewNoteFactory.postNewNote($scope.newNote)
 		.then( (data) => {
-			console.log("new note data", data);
 			$window.location.href ="#!/notes";
 		});
 	};

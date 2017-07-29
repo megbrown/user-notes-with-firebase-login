@@ -10,7 +10,6 @@ notesApp.controller("LoginCtrl", function($scope, $window, UserFactory) {
 	$scope.login = () => {
 		UserFactory.loginUser($scope.registerAccount)
 		.then( (userData) => {
-			console.log("userData on login", userData);
 			$window.location.href = "#!/notes";
 		});
 	};
